@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-15 Calculator Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Addition, Subtraction, Multiplication, Division, Modulus (%) of two numbers (only two numbers)</h1>
+    <br>
+
+    <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, sequi repellendus? Mollitia vitae quo impedit? Magni porro sapiente velit. Vel voluptatum officiis autem minus eveniet eius dolore repudiandae tempore sunt quidem laudantium quae asperiores nostrum sapiente, eligendi velit nam sit eum porro iusto eaque perferendis omnis qui? Rerum, deserunt sint.</p>
+
+    <br>
+    <br>
+    <p>Click "C" (clear all) before performing new calculation</p>
+    <br>
+    <div class="table-responsive">
+        <table>
+            <tr><input id="result" type="text" placeholder="Result" disabled /></tr>
+            <tr>
+                <td><button id="clear" type="submit" onclick="clrResult()">C</button></td>
+                <td><button id="back" onclick="backResult()"><-</button></td>
+                <td><button id="decimalpoint" onclick="dispResult('.')">.</button></td>
+                <td><button id="multiply" onclick="dispResult('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="7" onclick="dispResult('7')">7</button></td>
+                <td><button id="8" onclick="dispResult('8')">8</button></td>
+                <td><button id="9" onclick="dispResult('9')">9</button></td>
+                <td><button id="divide" onclick="dispResult('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="dispResult('4')">4</button></td>
+                <td><button id="5" onclick="dispResult('5')">5</button></td>
+                <td><button id="6" onclick="dispResult('6')">6</button></td>
+                <td><button id="subtract" onclick="dispResult('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="1" onclick="dispResult('1')">1</button></td>
+                <td><button id="2" onclick="dispResult('2')">2</button></td>
+                <td><button id="3" onclick="dispResult('3')">3</button></td>
+                <td><button id="add" onclick="dispResult('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="0" onclick="dispResult('0')">0</button></td>
+                <td><button id="00" onclick="dispResult('00')">00</button></td>
+                <td><button id="mod" onclick="dispResult('%')">%</button></td>
+                <td><button id="equal" onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js">
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
